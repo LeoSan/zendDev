@@ -1,0 +1,23 @@
+Paso 1:
+instalar servidor apache ( a su eleccion )
+    - php  5.3.2+
+    - mysql ( Version 5.7.1 )
+descargar e instalar Zend
+	composer require zendframework/zendframework1  ( Version 1.12 )
+
+Paso 2:
+Instalar los Script de Bases de datos que estan en la siguiente ruta: devPropiedades\devZend\data\BASE\CREATE_TABLE
+
+Ejecutar los Script en este orden
+
+00_dev_CREATE_BD.SQL
+01_dev_user.sql
+02_dev_auditoria.sql
+03_dev_construccion.sql
+04_dev_galeria.sql
+05_dev_caracteristicas.sql
+
+Paso 3: Acceder
+http://localhost/devPropiedades/devZend/public/controlactivos/index/view-login
+
+

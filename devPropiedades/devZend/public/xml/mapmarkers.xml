@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<markers>
+    <marker id="1" name="Billy Kwong" address="1/28 Macleay Street, Elizabeth Bay, NSW" lat="19.492298117038306" lng="-99.26148251953123" type="restaurant" />
+    <marker id="2" name="Love.Fish" address="580 Darling Street, Rozelle, NSW" lat="19.4214042119174374" lng="-99.2216570800781" type="restaurant" />
+    <marker id="3" name="Young Henrys" address="76 Wilford Street, Newtown, NSW" lat="19.39744219512731" lng="-99.04724912109373" type="bar" />
+    <marker id="4" name="Hunter Gatherer" address="Greenwood Plaza, 36 Blue St, North Sydney NSW" lat="19.52660092132701" lng="-99.09737424316404" type="bar" />
+    <marker id="5" name="The Potting Shed" address="7A, 2 Huntley Street, Alexandria, NSW" lat="19.4664043930386" lng="-99.1722186035156" type="bar" />
+</markers>

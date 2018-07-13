@@ -1,0 +1,143 @@
+<div class="container">    
+        <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="panel-title">Login
+                        <span id="info-login"></span>
+                        </div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"> <!-- <a href="#">Olvido contraseña?</a>  --> </div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body">
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="formLogin" name="formLogin" class="form-horizontal" role="form">
+
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="inpUsuario" name="inpUsuario" type="text" maxlength="30"  placeholder="Ingrese usuario" class="form-control">
+                            </div>
+                                <br><br>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="inpPass" name="inpPass" type="password" maxlength="30" placeholder="Ingrese contraseña" class="form-control">
+                            </div>
+
+
+                            <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Recodar acceso
+                                        </label>
+                                      </div>
+                            </div>
+                            <div style="margin-top:10px" class="form-group">
+                                <!-- Button -->
+                                <div class="col-sm-12 controls">
+                                    <input id="btn-login" name="btn-login" type="submit" class="btn btn-success" value="Acceder" />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12 control">
+                                    <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
+                                        No tienes Cuenta.
+                                    <a href="#" onclick="$('#loginbox').hide(); $('#signupbox').show()">
+                                        Ingresa Aqui
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>  
+        </div>
+
+		 <div id="signupbox" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <div class="panel-title">Registrar usuario</div>
+                            <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="#" onclick="$('#signupbox').hide(); $('#loginbox').show()">Login</a></div>
+                        </div>  
+                        <div class="panel-body">
+                            <form id="formRegistro" name="formRegistro" class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label for="inpCorreo" class="col-md-3 control-label">Correo</label>
+                                    <div class="col-md-9">
+                                        <input id="inpCorreo" name="inpCorreo" type="text" class="form-control" maxlength="45"  placeholder="Ingrese correo valido.">
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                    <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <label for="inpPrimerNombre" class="col-md-3 control-label">Nombres:</label>
+                                    <div class="col-md-9">
+                                        <input id="inpNombre" name="inpNombre" type="text" class="form-control soloLetrasNum" maxlength="45" placeholder="Ingrese nombres.">
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                    <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                                    </div>
+                                    <!-- Componente Mesj-->
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="inpApellido" class="col-md-3 control-label">Apellidos:</label>
+                                    <div class="col-md-9">
+                                        <input id="inpApellido" name="inpApellido" type="text" class="form-control soloLetrasNum" maxlength="45" placeholder="Ingrese apellidos.">
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                    <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                                    </div>
+                                    <!-- Componente Mesj-->
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="inpPassReg" class="col-md-3 control-label">Contraseña:</label>
+                                    <div class="col-md-9">
+                                        <input id="inpPassReg" name="inpPassReg" type="password" class="form-control" maxlength="45" placeholder="Ingrese contraseña.">
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                    <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                                    </div>
+                                    <!-- Componente Mesj-->
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="inpPassReg2" class="col-md-3 control-label">Repita Contraseña:</label>
+                                    <div class="col-md-9">
+                                        <input id="inpPassReg2" name="inpPassReg2" type="password" class="form-control" maxlength="45" placeholder="Ingrese contraseña de nuevo">
+                                    </div>
+                                    <!-- Componente Mesj-->
+                                    <div class="error" style="display:none"> <b class="border-notch notch"></b>
+                                    </div>
+                                    <!-- Componente Mesj-->
+
+                                </div>
+                                    
+                                <div class="form-group">
+                                    <!-- Button -->                                        
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <input id="btnGuardar" name="btnGuardar" type="submit" value="Guardar" class="btn btn-info btn-block" >
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-md-offset-3 col-md-9">
+                                        <span id="info-registro"> </span>
+                                    </div>
+                                </div>
+                                
+                                
+                            </form>
+                         </div>
+                    </div>
+
+         </div> 
+		
+</div>
+<script type="text/javascript" src="<?php echo $this->baseUrl; ?>/js/activo/view-login.js"></script>
+<!-- FIN DEL CONTENIDO -->
